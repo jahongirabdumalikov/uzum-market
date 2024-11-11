@@ -19,7 +19,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgb(252, 137, 23);
+    background-color: #fc8917;
 }
 
 nav{
@@ -75,15 +75,137 @@ button{
     border-radius: 3px;
 }
 
+@media (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .images {
+        gap: 10px;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    li > a {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    input {
+        width: 80%;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .images {
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    li > a {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+
+
 .products-grid {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+    background-color: #fc8917;
 }
 
 .product-card {
-    background-color: #fff;
+    background-color: #da723f;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -102,11 +224,11 @@ button{
 
 .product-info h3 {
     font-size: 1.2em;
-    color: #333;
+    color: #f7f7f7;
 }
 
 .product-info p {
-    color: #888;
+    color: #7bff72;
     font-size: 1em;
     margin: 10px 0;
 }
@@ -115,11 +237,11 @@ button{
 .product-info .price {
     font-size: 1.5em;
     font-weight: bold;
-    color: #f84242;
+    color: #f20000;
 }
 
 .product-info .add-to-cart {
-    margin-top: 15px;
+    margin-top: 25px;
     padding: 10px;
     background-color: #d310ff;
     color: white;
@@ -138,3 +260,11 @@ button{
 .product-info .add-to-cart:hover {
     background-color: #0bc6e2;
 }
+
+
+
+
+
+
+
+
